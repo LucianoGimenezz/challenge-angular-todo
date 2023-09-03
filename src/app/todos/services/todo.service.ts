@@ -22,7 +22,18 @@ export class TodoService {
   constructor() { }
 
   get getTodos() {
-    return [...this.todos]
+    return this.todos
+  }
+
+
+  public addTodo(value: string) {
+    const newTodo: Todo = {
+      id: v4(),
+      task: value,
+      isDone: false
+    }
+
+    this.todos.push(newTodo)
   }
 
 }

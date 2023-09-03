@@ -1,0 +1,13 @@
+.input__invalid,
+.input__invalid:focus,
+.input__invalid:hover {
+  box-shadow: 0 0 0 1px rgb(218, 52, 52);
+  border-color: rgb(218, 52, 52);
+}
+
+.input__invalid__message {
+  text-align: center;
+  font-size: .8rem;
+  color: rgb(218, 52, 52);
+  margin-top: 4px;
+}

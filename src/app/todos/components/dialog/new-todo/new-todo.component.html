@@ -1,0 +1,12 @@
+<section class="flex flex-column mt-4 justify-content-center">
+  <span class="p-float-label m-auto">
+    <input id="float-input" type="text" pInputText #input [ngClass]="{'input__invalid': isInvalid}" />
+    <label for="float-input">Todo</label>
+  </span>
+  <span *ngIf="isInvalid" class="input__invalid__message">The input mustn't be empty</span>
+  <div class="flex justify-content-center gap-4 mt-4">
+    <button pButton type="button" (click)="onClose()" label="Cancel" icon="pi pi-trash"
+      class="p-button-secondary"></button>
+    <button pButton type="button" (click)="onAdd(input.value)" label="Add" icon="pi pi-plus"></button>
+  </div>
+</section>
