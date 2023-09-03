@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Todo } from '../../interfaces';
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-card-todo',
@@ -8,10 +9,20 @@ import { Todo } from '../../interfaces';
 })
 export class CardTodoComponent implements OnInit{
 
+  constructor( private readonly _todoService: TodoService ) {}
+
   @Input()
   public todo!: Todo;
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     if (!this.todo) throw new Error('The todo is required')
+  }
+
+  public onDelete() {
+    this._todoService.deleteTodo(this.todo.id)
+  }
+
+  public onToggle() {
+    this._todoService.toggleDoneTodo(this.todo.id)
   }
 }

@@ -9,6 +9,6 @@
 
   <div *ngIf="todos.length > 0 ; else noTask"
     class="flex mt-8 flex-column gap-4 col-12 justify-content-center align-items-center">
-    <app-card-todo *ngFor="let todo of todos" class="card__container" [todo]="todo"></app-card-todo>
+    <app-card-todo *ngFor="let todo of todos" class="card__container max-w-30rem" [todo]="todo"></app-card-todo>
   </div>
 </section>
