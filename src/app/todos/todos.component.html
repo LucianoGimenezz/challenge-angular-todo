@@ -1,0 +1,14 @@
+<section class="mt-4 p-4 grid justify-content-center">
+  <p-button label="Add task" icon="pi pi-plus"></p-button>
+  <ng-template #noTask>
+    <div class="flex mt-8 flex-column col-12 justify-content-center align-items-center container__notasks">
+      <img src="assets/noTask.png" alt="No task image" width="160px" height="165px" />
+      <p>Without tasks</p>
+    </div>
+  </ng-template>
+
+  <div *ngIf="todos.length > 0 ; else noTask"
+    class="flex mt-8 flex-column gap-4 col-12 justify-content-center align-items-center">
+    <app-card-todo *ngFor="let todo of todos" class="card__container" [todo]="todo"></app-card-todo>
+  </div>
+</section>

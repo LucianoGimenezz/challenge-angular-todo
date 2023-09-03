@@ -1,0 +1,18 @@
+header {
+  background-color: #1f2d40;
+}
+
+.header__nav {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.header__nav>a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav>a>i {
+  font-size: 2rem;
+}
