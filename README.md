@@ -11,7 +11,7 @@ Before getting started, make sure you have the following installed on your syste
 Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/your-angular-app.git
+git clone git@github.com:LucianoGimenezz/challenge-angular-todo.git
 ```
 
 ### Run the application locally
