@@ -1,27 +1,63 @@
-# ChallengeAngular
+# Getting started
+## Prerequisites
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Before getting started, make sure you have the following installed on your system:
 
-## Development server
+- [Docker](https://www.docker.com/get-started) (Only if you want to run the app in a container)
+- [Git](https://git-scm.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Clone the Repository
 
-## Code scaffolding
+Clone this repository to your local machine using Git:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+git clone https://github.com/your-username/your-angular-app.git
+```
 
-## Build
+### Run the application locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1 - Navigate to your project directory:
+```bash
+  cd challenge-angular-todo
+```
 
-## Running unit tests
+2 - Install project dependencies:
+```bash
+  npm install --force
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3 - Start the development server:
+```bash
+  npm start:dev
+```
+to see the app go to `http://localhost:4200/`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Dockerize the application
 
-## Further help
+Follow these steps to run the angular application in a Docker container:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1 - Navigate to your project directory:
+```bash
+  cd challenge-angular-todo
+```
+
+2 - Build the Docker image:
+```bash
+  docker build -t image_name -f Dockerfile.Dev
+```
+
+replace `image_name` with the desired name for the development docker image.
+
+3 - Run the docker container:
+```bash
+ docker run -p 4200:4200 image_name
+```
+
+
+## Features
+
+- [✅] Add todos
+- [✅] Delete todos
+- [✅] Mark as done
+- [✅] Data Persistence
