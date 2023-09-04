@@ -56,7 +56,7 @@ replace `image_name` with the desired name for the development docker image.
 
 ## Running Cypress Tests
 
-You can execute Cypress tests for your project using the following methods:
+To execute Cypress tests you can use the following methods:
 
 ### Normal Mode
 
