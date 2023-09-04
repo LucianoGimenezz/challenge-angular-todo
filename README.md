@@ -54,6 +54,26 @@ replace `image_name` with the desired name for the development docker image.
  docker run -p 4200:4200 image_name
 ```
 
+## Running Cypress Tests
+
+You can execute Cypress tests for your project using the following methods:
+
+### Normal Mode
+
+To run Cypress tests in normal mode (with an interactive graphical user interface), use the following command:
+
+```bash
+npm run cypress:open
+```
+
+### Headless mode
+
+if you want to run Cypress tests in headless mode (without a graphical user interface), you can use the following command.
+```bash
+ npm run test:e2e
+```
+
+Ensure that your application is up and running, otherwise, an error can ocurr.
 
 ## Features
 
@@ -61,3 +81,4 @@ replace `image_name` with the desired name for the development docker image.
 - [✅] Delete todos
 - [✅] Mark as done
 - [✅] Data Persistence
+- [✅] Test e2e
