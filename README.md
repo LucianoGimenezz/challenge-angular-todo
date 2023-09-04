@@ -82,3 +82,6 @@ Ensure that your application is up and running, otherwise, an error can ocurr.
 - [✅] Mark as done
 - [✅] Data Persistence
 - [✅] Test e2e
+
+##  Deploy
+[🚀](https://angular-challenge.netlify.app/)
